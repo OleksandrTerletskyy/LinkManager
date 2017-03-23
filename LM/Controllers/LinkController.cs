@@ -7,14 +7,14 @@ using Newtonsoft.Json;
 
 namespace LM.Controllers
 {
-    public class LinkController : Controller
-    {
-	    private readonly LinkRepository _linkRepository = new LinkRepository();
+	public class LinkController : Controller
+	{
+		private readonly LinkRepository _linkRepository = new LinkRepository();
 
-	    public ActionResult Index()
-        {
-            return View();
-        }
+		public ActionResult Index()
+		{
+			return View();
+		}
 
 		[HttpGet]
 		public JsonResult GetLinks()
@@ -55,11 +55,5 @@ namespace LM.Controllers
 			_linkRepository.RemoveLink(id);
 			return new EmptyResult();
 		}
-
-		public ActionResult ConfirmationDialog()
-		{
-			return View("~/Views/Link/Dialogs/ConfirmationDialog.cshtml");
-		}
-
 	}
 }

@@ -7,17 +7,19 @@ using System.Web.Routing;
 
 namespace LM
 {
-    public class RouteConfig
-    {
-        public static void RegisterRoutes(RouteCollection routes)
-        {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+	public class RouteConfig
+	{
+		public static void RegisterRoutes(RouteCollection routes)
+		{
+			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Link", action = "Index", id = UrlParameter.Optional }
-            );
-        }
-    }
+			routes.IgnoreRoute("Templates/{*pathInfo}");
+
+			routes.MapRoute(
+				name: "Default",
+				url: "{controller}/{action}/{id}",
+				defaults: new { controller = "Link", action = "Index", id = UrlParameter.Optional }
+			);
+		}
+	}
 }

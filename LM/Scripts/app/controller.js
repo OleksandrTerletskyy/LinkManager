@@ -112,7 +112,7 @@
 		$scope.deleteConfirm = function (link) {
 			ngDialog.openConfirm(
 			{
-				template: "/Link/ConfirmationDialog",
+				template: "/Templates/Dialogs/ConfirmationDialog.html",
 				className: "ngdialog-theme-default",
 				scope: $scope,
 				height: 150,

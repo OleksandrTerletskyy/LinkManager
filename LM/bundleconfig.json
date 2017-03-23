@@ -1,0 +1,8 @@
+[
+  {
+    "outputFileName": "Scripts/libs/angular.min.js",
+    "inputFiles": [
+      "Scripts/libs/angular.js"
+    ]
+  }
+]

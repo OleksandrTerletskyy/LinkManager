@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Link Manager</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="~/Icons/LinkManagerTitleIcon.png">
+	<link href="~/Styles/bootstrap-theme.min.css" rel="stylesheet" />
+	<link href="~/Styles/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/Styles/ngDialog.min.css" rel="stylesheet" />
+	<link href="~/Styles/ngDialog-theme-default.min.css" rel="stylesheet" />
+	<link href="~/Styles/font-awesome.min.css" rel="stylesheet"/>
+
+	@RenderSection("Styles", false)
+
+	<script src="~/Scripts/libs/jquery-3.1.1.min.js"></script>
+	<script src="~/Scripts/libs/angular.min.js"></script>
+	<script src="~/Scripts/libs/bootstrap.min.js"></script>
+	<script src="~/Scripts/libs/ngDialog.min.js"></script>
+
+	@RenderSection("Scripts", false)
+
+</head>
+<body ng-app="LinkManagerApp">
+	@RenderBody()
+</body>
+</html>

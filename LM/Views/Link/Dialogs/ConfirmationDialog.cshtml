@@ -1,0 +1,16 @@
+﻿@{
+	Layout = null;
+}
+
+<div class="modal-header">
+	<h5>Delete link "{{(deletingLink.link.length>20)? deletingLink.link.substring(0,20) + '...':deletingLink.link}}"?</h5>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-danger" ng-click="deleteHandler(); closeThisDialog()">
+		Delete
+	</button>
+	<button class="btn btn-success" ng-click="closeThisDialog()">
+		Cancel
+	</button>
+</div>
+

@@ -1,0 +1,59 @@
+﻿.linkTableHeader{
+    display: table;
+}
+.linkTableHeader div{
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.container {
+    max-width: 1100px;
+    padding: 20px
+}
+.linkLabel {
+    margin-top: 6px;
+}
+
+.manageButtons button {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+hr {
+    margin-bottom: 10px !important;
+}
+
+form .ng-invalid.ng-dirty {
+    background-color: lightpink;
+}
+
+form .ng-valid.ng-dirty {
+    background-color: lightgreen;
+}
+
+div.error {
+    color: red;
+    font-weight: bold;
+}
+
+.table td, .table th {
+    text-align: center;
+    padding: 7px !important;
+    vertical-align: middle !important;  
+}
+
+td {
+    word-break:break-all;
+	font-size: 10pt;
+}
+
+.spinner {
+	font-size: 70px;
+}
+
+.spinnerContainer {
+	width: 100%;
+	text-align: center;
+	padding-top: 170px;
+}
+

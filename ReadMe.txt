@@ -9,9 +9,4 @@ Features:
 	- User can also filter links, which are displaying.
 	- Link input validation is implemented (user can't add empty link or enter non link)
 	  on both server and client sides.
-Unsolved problems:
-	- When user tries to delete a link for the first time there is a 
-	few seconds gap before confirmation window appears. The reason is that html
-	template has to be downloaded from the server.
-	- If user decides to go to the ~Link/ConfirmationDialog page he will see html template
-	which is not supposed to be displayed separately.
+

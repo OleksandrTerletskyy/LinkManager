@@ -9,4 +9,7 @@ Features:
 	- User can also filter links, which are displaying.
 	- Link input validation is implemented (user can't add empty link or enter non link)
 	  on both server and client sides.
+	  
+In order to start:
+	1. Change sql connection string in web.config file.
 
